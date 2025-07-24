@@ -283,95 +283,29 @@
             left: 18%;
             animation-delay: -3.5s;
         }
-        
-       /* Subtle tumbleweeds - stick figure style */
-        .tumbleweed {
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            opacity: 0.15;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg stroke='%238B6F47' stroke-width='1.5' fill='none'%3E%3Cpath d='M50,20 L45,35 M50,20 L55,35 M50,20 L50,35'/%3E%3Cpath d='M50,80 L45,65 M50,80 L55,65 M50,80 L50,65'/%3E%3Cpath d='M20,50 L35,45 M20,50 L35,55 M20,50 L35,50'/%3E%3Cpath d='M80,50 L65,45 M80,50 L65,55 M80,50 L65,50'/%3E%3Cpath d='M30,30 L40,40 M30,30 L35,40 M30,30 L40,35'/%3E%3Cpath d='M70,30 L60,40 M70,30 L65,40 M70,30 L60,35'/%3E%3Cpath d='M30,70 L40,60 M30,70 L35,60 M30,70 L40,65'/%3E%3Cpath d='M70,70 L60,60 M70,70 L65,60 M70,70 L60,65'/%3E%3Cpath d='M40,50 L60,50 M50,40 L50,60 M40,40 L60,60 M60,40 L40,60'/%3E%3C/g%3E%3C/svg%3E");
-            background-size: contain;
-            background-repeat: no-repeat;
+
+        .dust9 {
+            top: 74%;
+            left: 20%;
+            animation-delay: -4s;
         }
 
-        .tumbleweed1 {
-            top: 70%;
-            left: -80px;
-            animation: tumbleweedBounce 20s linear infinite;
+        .dust10 {
+            top: 65%;
+            left: 25%;
+            animation-delay: -5s;
         }
 
-        .tumbleweed2 {
-            top: 68%;
-            left: -80px;
-            animation: tumbleweedBounce 25s linear infinite;
-            animation-delay: -10s;
+        .dust11 {
+            top: 72%;
+            left: 22%;
+            animation-delay: -6s;
         }
 
-        @keyframes tumbleweedBounce {
-            0% {
-                transform: translateX(0) translateY(0) rotate(0deg);
-            }
-            5% {
-                transform: translateX(calc(5vw)) translateY(-10px) rotate(36deg);
-            }
-            10% {
-                transform: translateX(calc(10vw)) translateY(0) rotate(72deg);
-            }
-            15% {
-                transform: translateX(calc(15vw)) translateY(-8px) rotate(108deg);
-            }
-            20% {
-                transform: translateX(calc(20vw)) translateY(0) rotate(144deg);
-            }
-            25% {
-                transform: translateX(calc(25vw)) translateY(-12px) rotate(180deg);
-            }
-            30% {
-                transform: translateX(calc(30vw)) translateY(0) rotate(216deg);
-            }
-            35% {
-                transform: translateX(calc(35vw)) translateY(-6px) rotate(252deg);
-            }
-            40% {
-                transform: translateX(calc(40vw)) translateY(0) rotate(288deg);
-            }
-            45% {
-                transform: translateX(calc(45vw)) translateY(-10px) rotate(324deg);
-            }
-            50% {
-                transform: translateX(calc(50vw)) translateY(0) rotate(360deg);
-            }
-            55% {
-                transform: translateX(calc(55vw)) translateY(-8px) rotate(396deg);
-            }
-            60% {
-                transform: translateX(calc(60vw)) translateY(0) rotate(432deg);
-            }
-            65% {
-                transform: translateX(calc(65vw)) translateY(-11px) rotate(468deg);
-            }
-            70% {
-                transform: translateX(calc(70vw)) translateY(0) rotate(504deg);
-            }
-            75% {
-                transform: translateX(calc(75vw)) translateY(-7px) rotate(540deg);
-            }
-            80% {
-                transform: translateX(calc(80vw)) translateY(0) rotate(576deg);
-            }
-            85% {
-                transform: translateX(calc(85vw)) translateY(-9px) rotate(612deg);
-        }
-            90% {
-                transform: translateX(calc(90vw)) translateY(0) rotate(648deg);
-            }
-            95% {
-                transform: translateX(calc(95vw)) translateY(-6px) rotate(684deg);
-            }
-            100% {
-                transform: translateX(calc(100vw + 80px)) translateY(0) rotate(720deg);
-            }
+        .dust12 {
+            top: 67%;
+            left: 30%;
+            animation-delay: -7s;
         }
         
         @keyframes fastDrift {
@@ -569,6 +503,7 @@
     <p class="tagline">Crafted quiet. Dropped with force.</p>
     
     <!-- Story dust particles -->
+<!-- Story dust particles -->
 <div class="dust dust1 fast-dust"></div>
 <div class="dust dust2 lazy-dust"></div>
 <div class="dust dust3 struggle-dust"></div>
@@ -577,10 +512,10 @@
 <div class="dust dust6 struggle-dust"></div>
 <div class="dust dust7 lazy-dust"></div>
 <div class="dust dust8 fast-dust"></div>
-    
-<!-- Subtle tumbleweeds -->
-<div class="tumbleweed tumbleweed1"></div>
-<div class="tumbleweed tumbleweed2"></div>
+<div class="dust dust9 lazy-dust"></div>
+<div class="dust dust10 struggle-dust"></div>
+<div class="dust dust11 fast-dust"></div>
+<div class="dust dust12 lazy-dust"></div>
 </body>
 </html>
 </body>
