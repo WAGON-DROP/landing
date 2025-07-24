@@ -287,8 +287,8 @@
         /* Subtle tumbleweeds */
         .tumbleweed {
             position: absolute;
-            width: 30px;
-            height: 30px;
+            width: 50px;
+            height: 50px;
             opacity: 0.15;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='%238B6F47' opacity='0.8'%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='%238B6F47' stroke-width='1'/%3E%3Cpath d='M30,50 Q50,20 70,50 Q50,80 30,50' stroke-width='0.5'/%3E%3Cpath d='M50,30 Q80,50 50,70 Q20,50 50,30' stroke-width='0.5'/%3E%3Cpath d='M35,35 Q65,35 65,65 Q35,65 35,35' stroke-width='0.5'/%3E%3C/g%3E%3C/svg%3E");
             background-size: contain;
@@ -296,26 +296,26 @@
         }
 
         .tumbleweed1 {
-            top: 75%;
-            left: -30px;
+            top: 70%;
+            left: -50px;
             animation: tumbleweedRoll 20s linear infinite;
         }
 
         .tumbleweed2 {
-            top: 78%;
-            left: -30px;
+            top: 68%;
+            left: -50px;
             animation: tumbleweedRoll 25s linear infinite;
             animation-delay: -10s;
         }
 
-        @keyframes tumbleweedRoll {
-            from {
-                transform: translateX(0) rotate(0deg);
-            }
-            to {
-                transform: translateX(calc(100vw + 60px)) rotate(720deg);
-            }
-        }
+@keyframes tumbleweedRoll {
+    from {
+        transform: translateX(0) rotate(0deg);
+    }
+    to {
+        transform: translateX(calc(100vw + 100px)) rotate(720deg);
+    }
+}
         
         @keyframes fastDrift {
             from {
@@ -394,10 +394,11 @@
                 font-size: 16px;
             }
             
-            .tagline {
+          .tagline {
                 bottom: 20px;
-                font-size: 14px;
-            }
+                font-size: 12px;
+                white-space: nowrap;
+        }
             
             .main-container {
                 gap: 30px;
