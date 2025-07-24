@@ -259,6 +259,63 @@
             left: 10%;
             animation-delay: -3s;
         }
+
+        .dust5 {
+            top: 71%;
+            left: 15%;
+            animation-delay: -1.5s;
+        }
+
+        .dust6 {
+            top: 67%;
+            left: 12%;
+            animation-delay: -2.5s;
+        }
+
+        .dust7 {
+             top: 73%;
+            left: 7%;
+            animation-delay: -0.5s;
+        }
+
+        .dust8 {
+            top: 66%;
+            left: 18%;
+            animation-delay: -3.5s;
+        }
+        
+        /* Subtle tumbleweeds */
+        .tumbleweed {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            opacity: 0.15;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cg fill='%238B6F47' opacity='0.8'%3E%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='%238B6F47' stroke-width='1'/%3E%3Cpath d='M30,50 Q50,20 70,50 Q50,80 30,50' stroke-width='0.5'/%3E%3Cpath d='M50,30 Q80,50 50,70 Q20,50 50,30' stroke-width='0.5'/%3E%3Cpath d='M35,35 Q65,35 65,65 Q35,65 35,35' stroke-width='0.5'/%3E%3C/g%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .tumbleweed1 {
+            top: 75%;
+            left: -30px;
+            animation: tumbleweedRoll 20s linear infinite;
+        }
+
+        .tumbleweed2 {
+            top: 78%;
+            left: -30px;
+            animation: tumbleweedRoll 25s linear infinite;
+            animation-delay: -10s;
+        }
+
+        @keyframes tumbleweedRoll {
+            from {
+                transform: translateX(0) rotate(0deg);
+            }
+            to {
+                transform: translateX(calc(100vw + 60px)) rotate(720deg);
+            }
+        }
         
         @keyframes fastDrift {
             from {
@@ -454,9 +511,19 @@
     <p class="tagline">Crafted quiet. Dropped with force.</p>
     
     <!-- Story dust particles -->
-    <div class="dust dust1 fast-dust"></div>
-    <div class="dust dust2 lazy-dust"></div>
-    <div class="dust dust3 struggle-dust"></div>
-    <div class="dust dust4 lazy-dust"></div>
+<div class="dust dust1 fast-dust"></div>
+<div class="dust dust2 lazy-dust"></div>
+<div class="dust dust3 struggle-dust"></div>
+<div class="dust dust4 lazy-dust"></div>
+<div class="dust dust5 fast-dust"></div>
+<div class="dust dust6 struggle-dust"></div>
+<div class="dust dust7 lazy-dust"></div>
+<div class="dust dust8 fast-dust"></div>
+    
+<!-- Subtle tumbleweeds -->
+<div class="tumbleweed tumbleweed1"></div>
+<div class="tumbleweed tumbleweed2"></div>
+</body>
+</html>
 </body>
 </html>
