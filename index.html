@@ -92,13 +92,13 @@
             margin-top: 20px;
             padding: 13.5px 36px;
             background-color: #FAF8F3;
-            color: #D2691E;
+            color: #A0522D;
             text-decoration: none;
             font-family: 'Young Serif', serif;
             font-size: 13.5px;
             font-weight: 700;
             letter-spacing: 1px;
-            border: 3px solid #D2691E;
+            border: 3px solid #A0522D;
             cursor: pointer;
             transition: all 0.3s ease;
             opacity: 0;
@@ -107,7 +107,7 @@
         }
         
         .book-demo:hover {
-            background-color: #B85515;
+            background-color: #8B4513;
             transform: translateY(-2px);
             box-shadow: 0 4px 20px rgba(210, 105, 30, 0.3);
         }
@@ -121,7 +121,7 @@
             font-family: 'Young Serif', serif;
             font-size: 16px;
             letter-spacing: 0.5px;
-            color: #D2691E;
+            color: #A0522D;
             opacity: 0;
             animation: fadeInTagline 2s ease-out 1.2s forwards;
         }
@@ -406,23 +406,23 @@
                 <defs>
                     <!-- Rim gradient for 3D effect -->
                     <radialGradient id="rimGradient" cx="45%" cy="45%">
-                        <stop offset="0%" style="stop-color:#E4771F;stop-opacity:1" />
-                        <stop offset="70%" style="stop-color:#D2691E;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#B85515;stop-opacity:1" />
+                        <stop offset="0%" style="stop-color:#B8733D;stop-opacity:1" />
+                        <stop offset="70%" style="stop-color:#A0522D;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#8B4513;stop-opacity:1" />
                     </radialGradient>
                     
                     <!-- Spoke gradient for depth -->
                     <linearGradient id="spokeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" style="stop-color:#E4771F;stop-opacity:1" />
-                        <stop offset="50%" style="stop-color:#D2691E;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#B85515;stop-opacity:1" />
+                        <stop offset="0%" style="stop-color:#B8733D;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#A0522D;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#8B4513;stop-opacity:1" />
                     </linearGradient>
                     
                     <!-- Hub gradient for dimension -->
                     <radialGradient id="hubGradient" cx="40%" cy="40%">
-                        <stop offset="0%" style="stop-color:#E4771F;stop-opacity:1" />
-                        <stop offset="60%" style="stop-color:#D2691E;stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#A0500D;stop-opacity:1" />
+                        <stop offset="0%" style="stop-color:#B8733D;stop-opacity:1" />
+                        <stop offset="60%" style="stop-color:#A0522D;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#704214;stop-opacity:1" />
                     </radialGradient>
                     
                     <!-- Inner shadow for rim -->
@@ -440,15 +440,15 @@
                 
                 <!-- Outer rim with gradient -->
                 <circle cx="100" cy="100" r="95" fill="none" stroke="url(#rimGradient)" stroke-width="6" filter="url(#innerShadow)"/>
-                <circle cx="100" cy="100" r="88" fill="none" stroke="#B85515" stroke-width="2" opacity="0.6"/>
-                <circle cx="100" cy="100" r="92" fill="none" stroke="#E4771F" stroke-width="1" opacity="0.4"/>
+                <circle cx="100" cy="100" r="88" fill="none" stroke="#8B4513" stroke-width="2" opacity="0.6"/>
+                <circle cx="100" cy="100" r="92" fill="none" stroke="#B8733D" stroke-width="1" opacity="0.4"/>
                 
                 <!-- Inner hub with dimension -->
                 <circle cx="100" cy="100" r="20" fill="url(#hubGradient)"/>
                 <circle cx="100" cy="100" r="15" fill="#FAF8F3"/>
-                <circle cx="100" cy="100" r="15" fill="#D2691E" opacity="0.1"/>
+                <circle cx="100" cy="100" r="15" fill="#A0522D" opacity="0.1"/>
                 <circle cx="100" cy="100" r="10" fill="url(#hubGradient)"/>
-                <circle cx="98" cy="98" r="8" fill="#E4771F" opacity="0.3"/>
+                <circle cx="98" cy="98" r="8" fill="#B8733D" opacity="0.3"/>
                 
                 <!-- Main spokes with gradient and shadows -->
                 <g filter="url(#innerShadow)">
@@ -459,16 +459,16 @@
                 </g>
                 
                 <!-- Highlight on main spokes -->
-                <rect x="98.5" y="20" width="1" height="160" fill="#E4771F" opacity="0.3"/>
-                <rect x="20" y="98.5" width="160" height="1" fill="#E4771F" opacity="0.3"/>
-                <rect x="98.5" y="20" width="1" height="160" fill="#E4771F" opacity="0.3" transform="rotate(45 100 100)"/>
-                <rect x="98.5" y="20" width="1" height="160" fill="#E4771F" opacity="0.3" transform="rotate(-45 100 100)"/>
+                <rect x="98.5" y="20" width="1" height="160" fill="#B8733D" opacity="0.3"/>
+                <rect x="20" y="98.5" width="160" height="1" fill="#B8733D" opacity="0.3"/>
+                <rect x="98.5" y="20" width="1" height="160" fill="#B8733D" opacity="0.3" transform="rotate(45 100 100)"/>
+                <rect x="98.5" y="20" width="1" height="160" fill="#B8733D" opacity="0.3" transform="rotate(-45 100 100)"/>
                 
                 <!-- Secondary spokes with subtle depth -->
-                <rect x="99.5" y="40" width="1" height="120" fill="#B85515" transform="rotate(22.5 100 100)"/>
-                <rect x="99.5" y="40" width="1" height="120" fill="#B85515" transform="rotate(67.5 100 100)"/>
-                <rect x="99.5" y="40" width="1" height="120" fill="#B85515" transform="rotate(112.5 100 100)"/>
-                <rect x="99.5" y="40" width="1" height="120" fill="#B85515" transform="rotate(157.5 100 100)"/>
+                <rect x="99.5" y="40" width="1" height="120" fill="#8B4513" transform="rotate(22.5 100 100)"/>
+                <rect x="99.5" y="40" width="1" height="120" fill="#8B4513" transform="rotate(67.5 100 100)"/>
+                <rect x="99.5" y="40" width="1" height="120" fill="#8B4513" transform="rotate(112.5 100 100)"/>
+                <rect x="99.5" y="40" width="1" height="120" fill="#8B4513" transform="rotate(157.5 100 100)"/>
                 
                 <!-- Metal reinforcements with dimension -->
                 <circle cx="100" cy="35" r="4" fill="url(#hubGradient)"/>
@@ -477,10 +477,10 @@
                 <circle cx="165" cy="100" r="4" fill="url(#hubGradient)"/>
                 
                 <!-- Highlight dots on reinforcements -->
-                <circle cx="99" cy="34" r="1.5" fill="#E4771F" opacity="0.4"/>
-                <circle cx="99" cy="164" r="1.5" fill="#E4771F" opacity="0.4"/>
-                <circle cx="34" cy="99" r="1.5" fill="#E4771F" opacity="0.4"/>
-                <circle cx="164" cy="99" r="1.5" fill="#E4771F" opacity="0.4"/>
+                <circle cx="99" cy="34" r="1.5" fill="#B8733D" opacity="0.4"/>
+                <circle cx="99" cy="164" r="1.5" fill="#B8733D" opacity="0.4"/>
+                <circle cx="34" cy="99" r="1.5" fill="#B8733D" opacity="0.4"/>
+                <circle cx="164" cy="99" r="1.5" fill="#B8733D" opacity="0.4"/>
                 
                 <!-- Geometric tech details with depth -->
                 <circle cx="100" cy="20" r="2" fill="url(#hubGradient)"/>
